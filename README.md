@@ -4,7 +4,7 @@ This repository contains an installation script for setting up Clock-8001 on a R
 
 ## About Clock-8001
 
-The clock-8001 is an open-source, customizable, professional-grade clock and timer project, typically based on a Raspberry Pi. Its main features include network control via the Open Sound Control (OSC) protocol, support for professional timecode synchronization like LTC, and multiple display options.
+The clock-8001 is an open-source, customizable, professional-grade clock and timer project, typically based on a Raspberry Pi. Its main features include network control via the Open Sound Control (OSC) protocol, advanced timing, and customizable interfaces.
 
 - Official Clock-8001 project: [Clock-8001 GitLab](https://gitlab.com/clock-8001/clock-8001/)
 - This repository provides helper scripts and automation; Clock-8001 itself is licensed under GNU GPL v2.0 or later.
@@ -21,29 +21,23 @@ The clock-8001 is an open-source, customizable, professional-grade clock and tim
 
 ### Steps
 
-1. Update your system:
+1. Download and run the install script:
 
     ```bash
-    sudo apt-get update
-    sudo apt-get upgrade -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold"
-    ```
-
-2. Download and run the install script:
-
-    ```bash
-    git clone https://github.com/jpkelly/Clock8001Pi5.git
-    cd Clock8001Pi5
+    wget https://raw.githubusercontent.com/jpkelly/Clock8001Pi5/main/install.sh
     bash install.sh
     ```
 
-3. The script will:
+    The install script will automatically update and upgrade your system, install required dependencies, and handle all necessary setup.
+
+2. The script will:
     - Install required dependencies
     - Download and install Clock-8001 (you may choose latest or default version)
     - Build a compatible SDL library
     - Set up services for Clock-8001 and alsa-ltc (Audio to OSC SMTP LTC Converter)
     - Enable and start the services
 
-4. **Web Interface:**
+3. **Web Interface:**
     - After installation, access the Clock-8001 web interface at:  
       `http://<your-pi-ip>:<port>`
     - Default credentials:
