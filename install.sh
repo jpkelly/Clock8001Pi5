@@ -34,7 +34,7 @@ CLOCK_URL="https://kissa.depili.fi/clock-8001/releases/clock-8001_4.24.2_armhf.d
 CLOCK_VERSION=$(echo "$CLOCK_URL" | grep -oP 'clock-8001_\K[0-9.]+(?=_armhf.deb)')
 
 echo "\n============================================"
-echo "Clock-8001 version to be installed: \033[1;32m$CLOCK_VERSION\033[0m"
+echo "Clock-8001 version to be installed: [${CLOCK_VERSION}]"
 echo "============================================\n"
 echo "Do you want to install the latest version instead? (y/N)"
 read -r INSTALL_LATEST
