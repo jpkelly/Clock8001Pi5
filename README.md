@@ -1,6 +1,6 @@
 # Clock8001Pi5
 
-This repository contains an installation script for setting up Clock-8001 on a Raspberry Pi 5 running Raspberry Pi OS Lite (32-bit).
+This repository contains an installation script for setting up Clock-8001 on a Raspberry Pi 5 running Raspberry Pi OS Lite (32-bit) Bookworm.
 
 ## About Clock-8001
 
@@ -11,7 +11,7 @@ The clock-8001 is an open-source, customizable, professional-grade clock and tim
 
 ## Installation
 
-> **Note:** This script is intended for Raspberry Pi OS Lite (32-bit). Other operating systems or architectures may not be compatible.
+> **Note:** This script is intended for Raspberry Pi OS Lite (32-bit) Bookworm. Other operating systems or architectures may not be compatible.
 
 ### Prerequisites
 
