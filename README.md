@@ -1,6 +1,7 @@
 # Clock8001Pi5
 
 This repository contains an installation script for setting up Clock-8001 on a Raspberry Pi 5 running Raspberry Pi OS Lite (32-bit) Bookworm.
+Note: This only works on Bookworm, Trixie is not supported.
 
 ## About Clock-8001
 
